@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+.animated {
+    /*The bounce animation doesnt exist as a keyframe value*/
+    animation: bounce;
+    animation-duration: 1.5s;
+}
+.shake {
+    /*The shake animation doesnt exist as keyframe value*/
+    animation: shake;
+    animation-duration: 1.5s;
+}
+.btn-primary {
+    color: blue;
+}
