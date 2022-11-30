@@ -1,15 +1,44 @@
 * {
     box-sizing: border-box;
 }
-.animated {
-    /*The bounce animation doesnt exist as a keyframe value*/
-    animation: bounce;
-    animation-duration: 1.5s;
+body {
+    padding: 10px 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(193, 245, 133, 0),
+    rgba(91, 251, 77, 0.903));
+}
+.animate {
+    animation: bounce 1.5s;
 }
 .shake {
-    /*The shake animation doesnt exist as keyframe value*/
-    animation: shake;
-    animation-duration: 1.5s;
+    animation: shake 0.5s linear;
+}
+.blue {
+    color: blue;
+}
+.fadeOut {
+    animation: fadeOut;
+}
+@keyframes shake {
+0% {
+    transform: rotate(5deg);
+}
+
+25% {
+    transform: rotate(-6deg);
+}
+
+50% {
+    transform: rotate(5deg);
+}
+
+75% {
+    transform: rotate(-6deg);
+}
+
+100% {
+    transform: rotate(5deg);
+}
 }
 .btn-primary {
     color: blue;
