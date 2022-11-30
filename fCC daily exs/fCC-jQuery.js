@@ -1,9 +1,9 @@
 "use strict";
 
 // $(document).ready(function() {
-//     $("button").addClass("blue");
-//     $(".btn").addClass("shake");
-//     $("button").last().addClass("blue");
+//     $("button").addClass("animated fadeOut");
+//     $(".btn").animate("animated shake");
+//     $("button").last().animate("blue");
 //
 // });
 let buttons = document.querySelectorAll("button");
@@ -19,3 +19,6 @@ let wells = document.querySelectorAll(".well");
             this.classList.toggle("shake");
         })
     }
+let btnSix = document.querySelector("#target6");
+    btnSix.classList.toggle("fade-out")
+

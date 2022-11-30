@@ -16,8 +16,8 @@ body {
 .blue {
     color: blue;
 }
-.fadeOut {
-    animation: fadeOut;
+.fade-out {
+    animation: fadeOut 6s;
 }
 @keyframes shake {
 0% {
@@ -42,4 +42,12 @@ body {
 }
 .btn-primary {
     color: blue;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
