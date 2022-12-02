@@ -13,12 +13,16 @@ let buttons = document.querySelectorAll("button");
             this.classList.toggle("animate");
         })
     }
-let wells = document.querySelectorAll(".well");
-    for (let well of wells) {
-        well.addEventListener("mouseenter", function () {
+let borders = document.querySelectorAll(".border");
+    for (let border of borders) {
+        border.addEventListener("mouseenter", function () {
             this.classList.toggle("shake");
         })
     }
 let btnSix = document.querySelector("#target6");
     btnSix.classList.toggle("fade-out")
 
+let cloned = document.getElementById("target5").cloneNode();
+let newHome = document.getElementById("left-well");
+console.log(cloned);
+newHome.appendChild(cloned);
