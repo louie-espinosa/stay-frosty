@@ -21,8 +21,12 @@ let borders = document.querySelectorAll(".border");
     }
 let btnSix = document.querySelector("#target6");
     btnSix.classList.toggle("fade-out")
-
-let cloned = document.getElementById("target5").cloneNode();
+//param for deep must be true so that node clones the entire subtree including text
+let cloned = document.getElementById("target5").cloneNode(true);
 let newHome = document.getElementById("left-well");
 console.log(cloned);
 newHome.appendChild(cloned);
+//jQuery equivalent without vars is $("#target2").clone().appendTo("left-well");
+
+document.getElementById("left-well").parentElement.style.backgroundColor = "red";
+//$("#left-well").parent().css("background-color", "red")
