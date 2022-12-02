@@ -28,5 +28,10 @@ console.log(cloned);
 newHome.appendChild(cloned);
 //jQuery equivalent without vars is $("#target2").clone().appendTo("left-well");
 
-document.getElementById("left-well").parentElement.style.backgroundColor = "red";
-//$("#left-well").parent().css("background-color", "red")
+document.getElementById("target1").parentElement.style.backgroundColor = "red";
+//$("#target1").parent().css("background-color", "red")
+
+document.getElementById("right-well").firstElementChild.style.color = "orange";
+document.getElementById("right-well").firstElementChild.nextElementSibling.style.color = "orange";
+document.getElementById("right-well").lastElementChild.style.color = "orange";
+//$("#right-well").children().css("color", "orange")
