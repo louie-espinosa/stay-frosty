@@ -9,15 +9,15 @@
 let buttons = document.querySelectorAll("button");
     for(let i = 0; i < buttons.length; i++) {
         let button = buttons[i];
-        button.addEventListener("click", function(){
-            this.classList.toggle("animate");
-        })
+        // button.addEventListener("click", function(){
+            button.classList.toggle("animate");
+        // })
     }
 let borders = document.querySelectorAll(".border");
     for (let border of borders) {
-        border.addEventListener("mouseenter", function () {
-            this.classList.toggle("shake");
-        })
+     //   border.addEventListener("mouseenter", function () {
+            border.classList.toggle("shake");
+  //      })
     }
 let btnSix = document.querySelector("#target6");
     btnSix.classList.toggle("fade-out")
@@ -36,9 +36,15 @@ document.getElementById("right-well").firstElementChild.nextElementSibling.style
 document.getElementById("right-well").lastElementChild.style.color = "orange";
 //$("#right-well").children().css("color", "orange")
 
-document.querySelector("#left-well :nth-child(2)").classList.toggle("shake")
-document.querySelector("#right-well :nth-child(2)").classList.toggle("shake");
-//$(".target:nth-child(2)").addClass("bounce");
+document.querySelector("#left-well :nth-child(2)").classList.toggle("animate")
+document.querySelector("#right-well :nth-child(2)").classList.toggle("animate");
+//$(".target:nth-child(2)").addClass("animated bounce");
 
+let targets = document.querySelectorAll(".target :nth-of-type(odd)");
+    for (let target of targets) {
 
+        target.addEventListener("mouseenter", function(){
+            this.classList.toggle("shake");
+        })
+    }
 //$(".target:odd").addClass("animated shake");
