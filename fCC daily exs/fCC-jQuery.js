@@ -35,3 +35,10 @@ document.getElementById("right-well").firstElementChild.style.color = "orange";
 document.getElementById("right-well").firstElementChild.nextElementSibling.style.color = "orange";
 document.getElementById("right-well").lastElementChild.style.color = "orange";
 //$("#right-well").children().css("color", "orange")
+
+document.querySelector("#left-well :nth-child(2)").classList.toggle("shake")
+document.querySelector("#right-well :nth-child(2)").classList.toggle("shake");
+//$(".target:nth-child(2)").addClass("bounce");
+
+
+//$(".target:odd").addClass("animated shake");
