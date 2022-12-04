@@ -48,3 +48,17 @@ let targets = document.querySelectorAll(".target :nth-of-type(odd)");
         })
     }
 //$(".target:odd").addClass("animated shake");
+
+//document.querySelector("body").style.animation = "animate__animated animate__hinge";
+//YESSSSSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+document.querySelector("body").classList.add("animate__animated", "animate__hinge");
+
+// $("body").addClass("animated hinge");
+
+
+//TODO: This is an example of a selector on button(s) which selects an element to manipulate when the button is pressed/clicked
+// $('button').click(function() {
+//     $('section').addClass('animated fadeInLeft');
+// });
+
+

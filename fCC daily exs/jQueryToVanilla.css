@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
 }
@@ -18,6 +20,9 @@ body {
 }
 .fade-out {
     animation: fadeOut 6s;
+}
+.bor-rad {
+    border-radius: 20px;
 }
 @keyframes shake {
 0% {
