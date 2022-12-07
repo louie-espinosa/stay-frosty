@@ -1,0 +1,20 @@
+div {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=sass_mixins.css.map */

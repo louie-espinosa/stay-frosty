@@ -1,0 +1,40 @@
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+ // -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+div {
+  @include border-radius(15px);
+}
+
+@mixin border-stroke($val) {
+  @if $val == light {
+    border: 1px solid black;
+  }
+  @else if $val == medium {
+    border: 3px solid black;
+  }
+  @else if $val == heavy {
+    border: 6px solid black;
+  }
+  @else {
+    border: none;
+  }
+}
+
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  @include border-stroke(medium);
+}
