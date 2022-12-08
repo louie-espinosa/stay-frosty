@@ -43,3 +43,15 @@ div {
     font-size: 15px * $j
   }
 }
+$bg-colors: (bg-color1: blue, bg-color2: black, bg-color3: red);
+
+@each $key, $bg-color in $bg-colors {
+  .#{$bg-color}-bg {
+    background-color: $bg-color;
+  }
+}
+
+div {
+  height: 200px;
+  width: 200px;
+}

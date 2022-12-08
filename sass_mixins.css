@@ -37,4 +37,21 @@ div {
   font-size: 75px;
 }
 
+.blue-bg {
+  background-color: blue;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+}
+
 /*# sourceMappingURL=sass_mixins.css.map */
