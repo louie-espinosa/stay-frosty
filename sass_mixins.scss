@@ -55,3 +55,11 @@ div {
   height: 200px;
   width: 200px;
 }
+
+$x: 1;
+@while $x < 6 {
+  .text-#{$x} {
+    font-size: 15px * $x;
+  }
+  $x: $x + 1;
+}
