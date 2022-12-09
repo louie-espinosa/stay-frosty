@@ -1,0 +1,78 @@
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  // -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+div {
+  @include border-radius(15px);
+}
+
+@mixin border-stroke($val) {
+  @if $val == light {
+    border: 1px solid black;
+  }
+  @else if $val == medium {
+    border: 3px solid black;
+  }
+  @else if $val == heavy {
+    border: 6px solid black;
+  }
+  @else {
+    border: none;
+  }
+}
+
+#awesome {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  @include border-stroke(medium);
+}
+
+@for $j from 1 to 6 {
+  .text-#{$j} {
+    font-size: 15px * $j
+  }
+}
+$bg-colors: (bg-color1: blue, bg-color2: black, bg-color3: red);
+
+@each $key, $bg-color in $bg-colors {
+  .#{$bg-color}-bg {
+    background-color: $bg-color;
+  }
+}
+
+div {
+  height: 200px;
+  width: 200px;
+}
+
+$x: 1;
+@while $x < 6 {
+  .text-#{$x} {
+    font-size: 15px * $x;
+  }
+  $x: $x + 1;
+}
+//Extending a css element
+h3{
+  text-align: center;
+}
+.info{
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.info-important {
+  @extend .info;
+  background-color: magenta
+}
