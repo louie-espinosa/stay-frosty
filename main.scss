@@ -1,4 +1,6 @@
 
+@import 'variables';
+
 @mixin border-radius($radius){
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -38,6 +40,7 @@ div {
   background-color: red;
   @include border-stroke(medium);
 }
+
 @for $j from 1 to 6 {
   .text-#{$j} {
     font-size: 15px * $j
